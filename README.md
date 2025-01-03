@@ -38,50 +38,6 @@ Why?:
 ## Hypotheses
 There will be a difference in the word-form entropy and POS-form entropy between the most cited and the least cited abstracts.
 
-## Results
-### Entropy of abstracts
-#### Nature 2016-2019:
-Nature: relative word-form and POS-form entropy of the 100 most cited articles and the 100 least cited articles.
-
-The word entropy is quite high for both the most and the least cited abstracts. Out of 200 compared abstracts, only a couple of them fall below 0.8, which suggests that abstracts in Nature are in general rich in terms of vocabulary. This outcome would be consistent with the expectations – choosing abstracts from only one renowned scientific journal can potentially skew the results due to the high standards and strict rules of admission.
-
-The POS entropy is mostly kept between 0.4 and 0.5, but it varies from abstract to abstract. There is no clear one-way trend – the entropy increases and decreases interchangeably for both the most and the least cited abstracts. However, the highest peaks of entropy belong to the most cited abstracts. That would suggest that the most cited Nature abstracts might be less syntactically regular than the least cited ones, pointing towards higher creativity.
-
-Non-Nature Scopus 2016-2019:
-Non-Nature: relative word-form and POS-form entropy of the 100 most cited articles and the 100 least cited articles.
-
-For the Scopus dataset, the word entropy is also rather high, indicating an overall rich vocabulary. In the case of Scopus, the values have a much wider range compared to Nature, but that could be expected because of a wider range of topics covered in those abstracts. The differences between the most and the least cited abstracts don’t seem to be notable– the lowest and highest values of entropy belong to both categories.
-
-The POS entropy varies a lot for the Scopus abstracts, with values ranging from ~0.37 to 0.6 throughout the most and least cited positions. It can indicate that the Scopus abstracts differ between each other in terms of syntactic regularity, but there doesn’t seem to be any notable differences between the most and least cited abstracts.
-Comparison – Non-Nature 2016-2019 (Scopus) and Nature 2016-2019, relative word-form and POS-form entropy:
-
-
-
-The comparisons above take into account only the most cited abstracts from Nature and Scopus datasets. There is a clear difference between the range of entropy values for the datasets.
-
-Entropy on sentential positions
-Nature: 100 most cited articles vs. 100 least cited articles
-
-
-
-Non-Nature: 100 most cited articles vs. 100 least cited articles
-
-
-
-Non-Nature 2016-2019 (Scopus) and Nature 2016-2019
-
-
- 
-The plot above compares POS entropy for all abstracts from our datasets. It further explains the potential differences between the two datasets. It is important to note that the occurrences of very long sentences are rare, which is the reason for the diverging, unusual entropy values towards the last sentential positions. In the Scopus dataset, the longest sentences are twice as long as the longest Nature sentences, which is why the values for the Nature dataset start diverging much earlier than the ones for Scopus. The beginning of the plot is very uniform, showing an increasing trend that is consistent (and almost identical) for both datasets, up until the 50th word. This trend indicates that the structure of the sentences is similar throughout both of the datasets and it varies more depending on the length of the sentence.
-
-The other plots in this section, both for Scopus and Nature, show a slow increase in word entropy and POS entropy with the sentential position. The values diverge towards the end of the plots, which most likely stems from the rarity of long sentences.
-
-
-
-
-
-
-
 ## Calculations
 
 “For calculating word entropy on different sentential positions, for example, initial-position words in the text type of news, it will be based on a set of:
@@ -123,7 +79,60 @@ The abstracts from Nature and Scopus turned out to be the most available and rat
 
    f. visualization
 
+
 ## Results
+### Entropy of abstracts
+#### Nature 2016-2019:
+*Nature: relative word-form and POS-form entropy of the 100 most cited articles and the 100 least cited articles.*
+
+![Alt text](images/entropia_abstraktow_nature.png)
+
+The word entropy is quite high for both the most and the least cited abstracts. Out of 200 compared abstracts, only a couple of them fall below 0.8, which suggests that abstracts in Nature are in general rich in terms of vocabulary. This outcome would be consistent with the expectations – choosing abstracts from only one renowned scientific journal can potentially skew the results due to the high standards and strict rules of admission.
+
+![Alt text](images/POS_entropy_nature.png)
+
+The POS entropy is mostly kept between 0.4 and 0.5, but it varies from abstract to abstract. There is no clear one-way trend – the entropy increases and decreases interchangeably for both the most and the least cited abstracts. However, the highest peaks of entropy belong to the most cited abstracts. That would suggest that the most cited Nature abstracts might be less syntactically regular than the least cited ones, pointing towards higher creativity.
+
+#### Non-Nature Scopus 2016-2019:
+*Non-Nature: relative word-form and POS-form entropy of the 100 most cited and the 100 least cited articles.*
+
+![Alt text](images/word_entropy_Scopus.png)
+
+For the Scopus dataset, the word entropy is also rather high, indicating an overall rich vocabulary. In the case of Scopus, the values have a much wider range compared to Nature, but that could be expected because of the wider range of topics covered in those abstracts. The differences between the most and the least cited abstracts don’t seem to be notable– the lowest and highest values of entropy belong to both categories
+
+![Alt text](images/POS_entropy_Scopus.png)
+
+The POS entropy varies a lot for the Scopus abstracts, with values ranging from ~0.37 to 0.6 throughout the most and least cited positions. It can indicate that the Scopus abstracts differ from each other in terms of syntactic regularity, but there don’t seem to be any notable differences between the most and least cited abstracts.
+
+#### Comparison – Non-Nature 2016-2019 (Scopus) and Nature 2016-2019, relative word-form and POS-form entropy:
+
+![Alt text](images/relative_word_entropy.png)
+![Alt text](images/relative_POS_entropy.png)
+
+The comparisons above take into account only the most cited abstracts from Nature and Scopus datasets. There is a clear difference between the range of entropy values for the datasets.
+
+### Entropy on sentential positions
+
+*Nature: 100 most cited articles vs. 100 least cited articles*
+
+![Alt text](images/word_entropy_most_least_cited.png)
+![Alt text](images/POS_entropy_least_most_cited.png)
+
+*Non-Nature: 100 most cited articles vs. 100 least cited articles*
+
+![Alt text](images/word_entropy_Scopus_least_most_cited.png)
+![Alt text](images/POS_entopry_Scopus_most_least_cited.png)
+
+Non-Nature 2016-2019 (Scopus) and Nature 2016-2019
+
+![Alt text](images/word_entropy_nature_and_scopus.png)
+![Alt text](images/nature_scopus_POS_entropy.png)
+ 
+The plot above compares POS entropy for all abstracts from our datasets. It further explains the potential differences between the two datasets. It is important to note that the occurrences of very long sentences are rare, which is the reason for the diverging, unusual entropy values towards the last sentential positions. In the Scopus dataset, the longest sentences are twice as long as the longest Nature sentences, which is why the values for the Nature dataset start diverging much earlier than the ones for Scopus. The beginning of the plot is very uniform, showing an increasing trend that is consistent (and almost identical) for both datasets, up until the 50th word. This trend indicates that the structure of the sentences is similar throughout both of the datasets and it varies more depending on the length of the sentence.
+
+The other plots in this section, both for Scopus and Nature, show a slow increase in word entropy and POS entropy with the sentential position. The values diverge towards the end of the plots, which most likely stems from the rarity of long sentences.
+
+## Conclusions
 
 ### Entropy of abstracts:
 
@@ -134,8 +143,11 @@ The differences between the most and least cited abstracts are not consistent an
 
 The word-form and POS-form entropy on sentential positions are consistent throughout both datasets and very similar between the most and least cited abstracts. This dependency could be pointing towards the entropy of a whole abstract being the main factor contributing to vocabulary richness and creativity of a text, instead of the entropy of words or parts of speech on certain sentential positions.
 
+To sum up, the hypotheses that we proposed weren’t confirmed, at least not fully (the difference observed in the Nature dataset in terms of creativity doesn’t seem to be conclusive). The research could be further improved by increasing the size of the sample.
 
-To sum up, the hypotheses that we proposed weren’t confirmed, at least not fully (the difference observed in the Nature dataset in terms of creativity doesn’t seem to be conclusive). The research could be further improved by increasing the size of the sample and conducting a full statistical analysis of the results.
+## References
+
+Chen, R., Liu, H., & Altmann, G. (2017). Entropy in different text types. Digital Scholarship in the Humanities, 32(3), 528–542. https://doi.org/10.1093/llc/fqw008
 
 
 
