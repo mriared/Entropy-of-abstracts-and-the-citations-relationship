@@ -1,4 +1,10 @@
-# Entropy-of-abstracts-and-the-citations-relationship
+# Entropy-of-abstracts-and-the-citations-
+
+See the code in google colab :
+Data Processing:
+https://colab.research.google.com/drive/1ASyqHT2qz7NovhOpC2t2Aqp5l5sZ-FYP?usp=sharing
+Data Analysis:
+https://colab.research.google.com/drive/1IPdHIBtXQNyarv0BAmDKoDkYNwH6x35u?usp=sharing
 
 This analysis investigates the relationship between the linguistic features of scientific abstracts and their likelihood of citation.
 
